@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>final project request form</title>
+<link href="requestcssdoc.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/lnv3abp.css">
+<link rel="stylesheet" href="https://use.typekit.net/lnv3abp.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+	  <div class="floatimg"></div>
+	  <div class="topbar"></div>
+  <h1><img src="images/Wrenbow Design Logo.png" width="100" height="100" alt=""/> Wrenbow Design Portfolio</h1>
+    <nav class="menu" id="menu">
+      <!--Nav menu has; Home, Gallery, Blog and Request form-->
+		<ul>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="gallerypage.html">Gallery</a></li>
+		<li><a href="blogpage.html">Blog</a></li>
+		<li><a href="requestpage.html">Request Form</a></li>
+		</ul>
+    </nav>
+  </header>	
+  <main>
+	  <h2>Request For Commission Form</h2>
+	      <form class="requestform" action="results.html" id="myForm" method="GET" >
+			  <h4>Your Information</h4>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your name" >
+        </div>
+        
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Your email" >
+        </div>
+			  
+         <div>
+          <label for="tel">Phone Number</label>
+          <input type="tel" name="telephone" id="tel" placeholder="Your phone number" >
+        </div>       
+			<h4>Art Media</h4>
+		<div>
+          <label for="digital">Digital</label>
+          <input type="radio" name="media" id="digital"  value="digital" >
+        </div>
+		<div>
+          <label for="traditional">Traditional B&amp;W</label>
+          <input type="radio" name="media" id="traditonal"  value="traditonal" >
+        </div>
+		<div>
+          <label for="painting">Painting</label>
+          <input type="radio" name="media" id="painting"  value="painting" >
+        </div>
+			  <h4>More Info</h4>
+		<div>
+		<label for="file">Upload Reference Images</label>
+		<input type="file" name="file" id="file" value="file">
+		</div>
+		<div>
+		<label for="date">Date Completed</label>
+		<input type="date" name="date" id="date" min="2024-05-31" value="date">
+		</div>
+        <div>
+          <label for="message">Commission Details</label>
+          <textarea name="message"  id="message" rows="10" cols="40" placeholder="What work do you want done?" ></textarea>
+        </div>	
+        <div>
+			<button type="reset">Reset</button>
+			<button type="submit">Submit</button>
+        </div>
+      </form>	 
+  </main>
+  <footer>
+	<p><small>Copyright 2024. Wrenbow Design Online. All Rights Reserved. All Wrongs Righted <a href="privacy.html" target="_blank">Privacy</a></small></p>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>results</title>
+<link href="resultscssdoc.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/lnv3abp.css">
+<link rel="stylesheet" href="https://use.typekit.net/lnv3abp.css">
+</head>
+
+<body>
+	<div class="wrapper">
+	  <header>
+	  <div class="floatimg"></div>
+	  <div class="topbar"></div>
+	  <h1><img src="images/Wrenbow Design Logo.png" width="150" height="150" alt=""/> Wrenbow Design Portfolio </h1>
+   <nav id="menu">
+      <!--Nav menu has; Home, Gallery, Blog and Request form --->
+		<ul>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="gallerypage.html">Gallery</a></li>
+		<li><a href="blogpage.html">Blog</a></li>
+		<li><a href="requestpage.html">Request Form</a></li>
+		</ul>
+    </nav>
+  </header>
+	
+	<div id="results">
+		<a href="requestpage.html"><h2>Back to Form</h2></a>
+	
+    <script>
+    const resultsList = document.getElementById('results') 
+    new URLSearchParams(window.location.search).forEach((value, 
+    name) => {
+    resultsList.append(`${name}: ${value}`) 
+    resultsList.append(document.createElement('br'))
+    })
+    </script>
+		</div>
+	</div>
+</body>
+</html>
